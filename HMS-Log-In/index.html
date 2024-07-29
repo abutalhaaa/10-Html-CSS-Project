@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    
+<link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="apply_box">
+        <h1>
+          Patient Information
+        </h1>
+        <form action="">
+          <div class="form_container">
+            <div class="form_control">
+              <label for="date"> Date </label>
+              <input value="2022-01-10" type="date" id="date" name="date" />
+            </div>
+            <div class="form_control">
+              <label for="number"> Contact Number </label>
+              <input
+                type="number"
+                id="number"
+                name="number"
+                placeholder="Enter Phone Number..."
+              />
+            </div>
+            <div class="form_control">
+              <label for="email"> Email </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Email..."
+              />
+            </div>
+            <div class="form_control">
+              <label for="first_name"> First Name </label>
+              <input
+                id="first_name"
+                name="first_name"
+                placeholder="Enter First Name..."
+              />
+            </div>
+            <div class="form_control">
+              <label for="age"> Patient Age </label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Enter Your Age..."
+              />
+          </div>
+          <div class="form_control">
+            <label for="Patient Gender"> Patient Gender </label>
+            <select id="Patient Gender" name="Patient Gender">
+              <option value="">Select Your Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+          <div class="textarea_control">
+            <label for="address"> Address </label>
+            <textarea
+              id="address"
+              name="address"
+              row="4"
+              cols="50"
+              placeholder="Enter Address"
+            ></textarea>
+          </div>
+
+        </div>
+        <div class="button_container">
+          <button type="submit">Apply Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
