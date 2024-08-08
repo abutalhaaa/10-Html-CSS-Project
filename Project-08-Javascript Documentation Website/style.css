@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/* main bg  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* main body  */
 html,
 body {
   font-family: "Roboto", sans-serif;
@@ -22,6 +25,7 @@ body {
   gap: 10px;
 }
 
+/* header  */
 header {
   border: 1px solid #ccc;
   height: 100vh;
@@ -29,7 +33,7 @@ header {
   top: 0;
 }
 
-
+/* nav section  */
 nav h1 {
   font-size: 1.5rem;
   font-weight: 300;
@@ -40,18 +44,19 @@ nav h1 {
 nav ul {
   list-style: none;
 }
+
 nav ul li {
   border-bottom: 1px solid #ccc;
   padding: 10px;
   color: black;
 }
+
 nav ul li:hover {
   background: #ccc;
   transition: 0.3s ease-in-out;
 }
 
 /* Main Section */
-
 main {
   padding: 50px;
 }
@@ -90,6 +95,7 @@ section article p {
   line-height: 1.6;
 }
 
+/* code section article */
 code {
   font-family: "Courier New", Courier, monospace;
   display: block;
