@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* root section  */
 :root {
   --purple500: #281154;
   --purple300: #270082;
@@ -7,11 +9,15 @@
   --body: #f9f6ff;
   --max-width: 1200px;
 }
+
+/* all body */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* all body */
 html,
 body {
   font-family: "Roboto", sans-serif;
@@ -20,20 +26,26 @@ body {
   scroll-behavior: smooth;
 }
 
+/* start */ 
 section {
   scroll-margin: 50px;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+
+/* container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 header {
   background-color: var(--purple300);
   position: sticky;
@@ -41,6 +53,8 @@ header {
   z-index: 100;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
+/* navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -48,21 +62,26 @@ nav {
   color: white;
   padding: 20px 0;
 }
+
+/* logo */
 .logo {
   font-size: 32px;
   font-weight: 600;
 }
 
+/* button */
 button {
   padding: 10px 15px;
   border: none;
   transition: 0.2s ease-in-out;
   border-radius: 5px;
 }
+
 button:hover {
   transition: 0.3s ease-in-out;
   opacity: 0.8;
 }
+
 nav ul {
   display: flex;
   gap: 20px;
@@ -72,10 +91,13 @@ nav ul li {
   border-bottom: 2px solid transparent;
   transition: 0.2s ease-in;
 }
+
 nav ul li:hover {
   border-bottom: 2px solid white;
   transition: 0.2s ease-in;
 }
+
+/* hero section */
 .hero-section {
   background-image: url(images/hero_image.png);
   height: 100vh;
@@ -90,17 +112,21 @@ nav ul li:hover {
   flex-direction: column;
   gap: 30px;
 }
+
 .hero-section h1 {
   font-size: 96px;
 }
+
 .hero-section h3 {
   font-size: 32px;
 }
 
+/* music section */
 .music-section {
   padding-top: 50px;
   background: var(--purple500);
 }
+
 .music-section .container {
   display: flex;
   flex-direction: column;
@@ -115,15 +141,18 @@ nav ul li:hover {
   position: relative;
   top: 400px;
 }
+
 .primary-btn {
   background-color: var(--red600);
   color: white;
 }
+
 .secondary-btn {
   background-color: var(--purple300);
   color: white;
 }
 
+/* about music */
 .about-music {
   padding-top: 500px;
   display: grid;
@@ -133,6 +162,7 @@ nav ul li:hover {
   margin-bottom: 50px;
 }
 
+/* video section */
 .video-section {
   background-image: url(images/video.png);
   min-height: 800px;
@@ -141,12 +171,14 @@ nav ul li:hover {
   color: white;
   text-align: center;
 }
+
 .video-section .container {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-top: -200px;
 }
+
 .hero-section,
 .video-section {
   position: relative;
@@ -155,11 +187,16 @@ nav ul li:hover {
   background-repeat: no-repeat;
 }
 
+/* gift section */
 .gift-section {
   display: flex;
   justify-content: center;
   margin: 100px 0;
   gap: 50px;
+}
+
+.gift-section {
+  scroll-margin: 120px;
 }
 
 .gift-content {
@@ -174,10 +211,12 @@ nav ul li:hover {
     width: 11%; 
 }
 
+/* footer */
 .footer-upper {
   background-color: var(--purple600);
   padding: 20px;
 }
+
 .footer-upper .container {
   display: flex;
   color: white;
@@ -189,6 +228,7 @@ nav ul li:hover {
   border-bottom: 2px solid white;
   margin-bottom: 10px;
 }
+
 .footer-lower {
   background-color: var(--purple300);
   padding: 20px;
@@ -197,6 +237,3 @@ nav ul li:hover {
   color: white;
 }
 
-.gift-section {
-  scroll-margin: 120px;
-}
